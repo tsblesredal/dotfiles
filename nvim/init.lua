@@ -20,6 +20,7 @@ vim.opt.relativenumber = true
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.ai = true
+vim.opt.cursorline = true
 
 vim.api.nvim_create_user_command(
     'InitLua',
