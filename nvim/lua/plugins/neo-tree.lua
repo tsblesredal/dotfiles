@@ -27,6 +27,7 @@ return {
           position = "left", -- 左側に表示
           width = 30, -- 幅30
         },
+        separator = true,
       })
     end,
   vim.keymap.set("n", "<S-n>", ":Neotree toggle<CR>", { noremap = true, silent = true })

@@ -115,9 +115,13 @@ return {
         FloatBorder = { bg = colors["linkarzu_color10"] },
         FloatTitle = { bg = colors["linkarzu_color10"] },
         NotifyBackground = { bg = colors["linkarzu_color10"] },
-        NeoTreeNormalNC = { bg = colors["linkarzu_color10"] },
-        NeoTreeNormal = { bg = colors["linkarzu_color10"] },
-        NvimTreeWinSeparator = { fg = colors["linkarzu_color10"], bg = colors["linkarzu_color10"] },
+        -- Neotreeを透明化させるためコメントアウト
+        -- NeoTreeNormalNC = { bg = colors["linkarzu_color10"] },
+        -- NeoTreeNormal = { bg = colors["linkarzu_color10"] },
+        -- 区切り線
+        NeoTreeWinSeparator = { fg = colors["linkarzu_color05"], bg = "NONE" },
+
+        NvimTreeWinSeparator = { fg = colors["linkarzu_color05"], bg = colors["linkarzu_color10"] },
         NvimTreeNormalNC = { bg = colors["linkarzu_color10"] },
         NvimTreeNormal = { bg = colors["linkarzu_color10"] },
         TroubleNormal = { bg = colors["linkarzu_color10"] },
@@ -186,9 +190,13 @@ return {
         FzfLuaBorder = { fg = colors["linkarzu_color02"], bg = colors["linkarzu_color10"] },
         FzfLuaNormal = { fg = colors["linkarzu_color14"], bg = colors["linkarzu_color10"] },
 
-        TelescopeNormal = { fg = colors["linkarzu_color14"], bg = colors["linkarzu_color10"] },
-        TelescopeMultiSelection = { fg = colors["linkarzu_color02"], bg = colors["linkarzu_color10"] },
-        TelescopeSelection = { fg = colors["linkarzu_color14"], bg = colors["linkarzu_color13"] },
+        TelescopeNormal = { fg = colors["linkarzu_color14"], bg = "none" },
+        -- TelescopeMultiSelection = { fg = colors["linkarzu_color02"], bg = colors["linkarzu_color10"] },
+        -- TelescopeSelection = { fg = colors["linkarzu_color14"], bg = colors["linkarzu_color13"] },
+        -- TelescopeNormal = { fg = colors["linkarzu_color14"], bg = "#0a0047" },
+        -- TelescopeMultiSelection = { fg = colors["linkarzu_color02"], bg = colors["tokyo_night_bg] },
+        -- TelescopeSelection = { fg = colors["linkarzu_color14"], bg = colors["tokyo_night_bg"] },
+
       }
 
       -- Apply all highlight definitions at once
