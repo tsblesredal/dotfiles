@@ -30,6 +30,6 @@ vim.api.nvim_create_user_command(
     {}
 )
 
-vim.g.mapleader = " "
 require("config.lazy")
+require("config.keybind")
 vim.cmd("colorscheme eldritch")

@@ -30,5 +30,5 @@ return {
         separator = true,
       })
     end,
-  vim.keymap.set("n", "<S-n>", ":Neotree toggle<CR>", { noremap = true, silent = true })
+  vim.keymap.set("n", "<Leader>s", ":Neotree toggle<CR>", { noremap = true, silent = true })
 }

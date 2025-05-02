@@ -1,3 +1,8 @@
+vim.filetype.add({
+  extension = {
+    tf = "terraform",
+  },
+})
 return {
   {
     "williamboman/mason.nvim",
@@ -9,7 +14,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "pyright", "lua_ls" },
+        ensure_installed = { "pyright", "lua_ls", "terraformls","bashls", "marksman" },
       })
     end,
   },
@@ -19,6 +24,9 @@ return {
       local lspconfig = require("lspconfig")
       lspconfig.pyright.setup({})
       lspconfig.lua_ls.setup({})
+      lspconfig.terraformls.setup({})
+      lspconfig.bashls.setup({})
+      lspconfig.marksman.setup({})
     end,
   },
   {
