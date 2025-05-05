@@ -1,0 +1,14 @@
+local colors = require("config.colors")
+
+return {
+  "eldritch-theme/eldritch.nvim",
+  lazy = false,
+  name = "eldritch",
+  opts = {
+    transparent = true,
+    -- Overriding colors globally using a definitions table
+    },
+  config = function ()
+      vim.cmd[[colorscheme eldritch]]
+  end
+}

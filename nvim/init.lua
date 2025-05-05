@@ -32,4 +32,3 @@ vim.api.nvim_create_user_command(
 
 require("config.lazy")
 require("config.keybind")
-vim.cmd("colorscheme eldritch")

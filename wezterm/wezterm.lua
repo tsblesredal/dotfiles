@@ -11,5 +11,6 @@ config.line_height = 1.3
 config.ssh_domains = {}
 config.enable_scroll_bar = true
 
+
 return config
 

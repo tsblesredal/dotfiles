@@ -28,6 +28,7 @@ return {
           width = 30, -- 幅30
         },
         separator = true,
+        transparent = true
       })
     end,
   vim.keymap.set("n", "<Leader>s", ":Neotree toggle<CR>", { noremap = true, silent = true })
